@@ -13,7 +13,7 @@ void addition::get()
 	cout<<"Enter two number:";
 	cin>>a>>b;
 }
-void put::(addition A)
+void put(addition A)
 {
 	A.c=A.a+A.b;
 	cout<<"Addition of a And B is:"<<A.c;
