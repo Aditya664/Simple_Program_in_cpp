@@ -1,24 +1,37 @@
-#include<iostream>
-using namespace std;
-int main()
-{
-int num, remainder_num, reverse_num = 0, i, temp_num;
-cout << "Enter random number to check palindrome value:"; // allow user to enter a number
-cin >> num; // takes value from user
-temp_num = num; //store number to temp_number
-for(i = num; i >0;)
-{
-remainder_num= i % 10;
-reverse_num = remainder_num+ reverse_num * 10;
-i = i/ 10;
+
+Home >>Cpp Programs >Check Palindrome in C++
+
+Check Palindrome in C++
+
+Palindrome Program In C++
+Palindrome program in C++ is basically a program that is used to verify whether the input that is provided by the user is a palindrome number or not. Palindrome number is basically a number that remains the same even if it is reversed. For instance, 121, 747, 555, 131, 13231 are the palindrome numbers because they are satisfying the definition.
+
+
+Here is the program of the palindrome number in C++ programming language that will check the input of the user for being a palindrome number:
+
+
+
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+  int num,rem,sum=0,temp;    
+  cout<<"Please Enter Your  Number :";    
+  cin>>num;    
+ temp=num;    
+ while(num>0)    
+{    
+ rem=num%10;    
+ sum=(sum*10)+rem;    
+ num=num/10;    
+}    
+if(temp==sum)
+{    
+cout<"Given Number is Palindrome number";    
 }
-if(temp_num == reverse_num) // check reverse number with original number
+else    
 {
-cout << "Given number is palindrome"; //if match, print palindrome
-}
-else
-{
-cout << "Given number is not a palindrome"; // If it doesn’t match with the original print, not a palindrome
-}
-return 0;
-}
+cout<"Given Number is not Palindrome number";   
+} 
+ return 0;  
+}  
