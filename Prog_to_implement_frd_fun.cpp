@@ -8,7 +8,7 @@ class addition
 		void get();
 		friend void put(addition A);
 };
-void addiion::get()
+void addition::get()
 {
 	cout<<"Enter two number:";
 	cin>>a>>b;
